@@ -1,9 +1,14 @@
-import Image from 'next/image'
+import Navbar from '@/ui/navbar'
+import React from 'react'
 
 export default function Home() {
   return (
-    <main>
+    <React.Fragment>
+      <Navbar />
 
-    </main>
+      <main>
+
+      </main>
+    </React.Fragment>
   )
 }
