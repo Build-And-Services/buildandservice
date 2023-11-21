@@ -1,4 +1,5 @@
 
+import CardSource from '@/components/cards/card-source';
 import Navbar from '@/components/navbar';
 import React from 'react';
 
@@ -27,18 +28,16 @@ export default function Home() {
       <Navbar/>
       <main className='w-[90%] sm:max-w-6xl mx-auto py-10'>
 
-        <section>
+        <section className='mb-20'>
           <h3 className='font-medium text-green-500 text-lg'>Recommended For You</h3>
           <h1 className='text-slate-600 font-bold text-3xl mt-2'>Pilih sesuai kebutuhan kalian.</h1>
-
-
+          <div className='flex gap-x-3 flex-wrap mt-10 gap-y-10 justify-center sm:justify-start'>
+            <CardSource title='Source E-commerce fullstack javascript' link='/' price='500.000' />
+            <CardSource title='Source E-commerce fullstack javascript' link='/' price='500.000' />
+            <CardSource title='Source E-commerce fullstack javascript' link='/' price='500.000' />
+            {/* <CardSource title='Source E-commerce fullstack javascript' link='/' price='500.000' /> */}
+          </div>
          
-          {/* <Carousel responsive={responsive}>
-            <div>Item 1</div>
-            <div>Item 2</div>
-            <div>Item 3</div>
-            <div>Item 4</div>
-          </Carousel> */}
         </section>
 
         <section className='bg-[#c8e7df] w-full rounded-sm'>
