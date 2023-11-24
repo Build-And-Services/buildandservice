@@ -6,8 +6,10 @@ import WebDesign from "@/assets/img/web.png"
 import Mobile from "@/assets/img/mobile.png"
 import Source from "@/assets/img/source.png"
 import CardService from '@/components/cards/card-service';
+import FaqAccordion from '@/components/accordion/faq-accordion';
 
 export default function Home() {
+
   return (
     <React.Fragment>
       <Navbar/>
@@ -39,15 +41,20 @@ export default function Home() {
           </div>
         </section>
 
-        <div className=''>
+        <section className=''>
           <div>
             <h3 className='font-medium text-green-500 text-lg'>Info lebih lanjut</h3>
             <h1 className='text-slate-600 font-bold text-3xl mt-2'>Frequently Asked Questions</h1>
           </div>
-          <div className='mt-10 space-y-5 '>
+          <div className='mt-10 space-y-3 '>
             {/* <FaQPart /> */}
+            <FaqAccordion />
+            <FaqAccordion />
+            <FaqAccordion />
+            <FaqAccordion />
+
           </div>
-        </div>
+        </section>
 
       </main>
     </React.Fragment>
