@@ -1,11 +1,20 @@
+'use client';
+import { useEffect } from 'react';
 import Image from 'next/legacy/image';
 import Link from 'next/link';
 import { FaInstagram, FaGithubAlt, FaLinkedin } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import CardTeamProps from '@/data/interfaces/props/card-team';
 
 export default function CardTeam({ name, description, github, image, instagram, linkedin }: CardTeamProps) {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  }, []);
   return (
-    <div className='py-8 w-64 shadow-md rounded-xl bg-white flex flex-col justify-center items-center'>
+    <div className='py-8 w-72 lg:w-64 shadow-md rounded-xl bg-white flex flex-col justify-center items-center' data-aos='fade-right' data-aos-offset='300' data-aos-easing='ease-in-sine'>
       <div className='bg-[#f6f8fd] w-32 h-32 rounded-full relative'>
         <Image src={image} className='object-cover w-32 h-32 rounded-full' layout='fill' alt='profile' />
       </div>

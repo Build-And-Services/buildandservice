@@ -8,6 +8,7 @@ import InputText from '@/components/form-input/input-text';
 import InputSelect from '@/components/form-input/input-select';
 import InputTextArea from '@/components/form-input/input-textarea';
 import InputFile from '@/components/form-input/input-file';
+import Footer from '@/components/footer';
 
 export default function Formulir() {
   useEffect(() => {
@@ -61,6 +62,7 @@ export default function Formulir() {
           </section>
         </div>
       </main>
+      <Footer />
     </React.Fragment>
   );
 }

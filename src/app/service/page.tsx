@@ -8,6 +8,7 @@ import Navbar from '@/components/navbar';
 import SectionService from '@/components/sections/service';
 import serviceData from '@/data/static/service';
 import bannerService from '@/assets/img/service-page-assets/banner-service.jpg';
+import Footer from '@/components/footer';
 
 export default function Service() {
   useEffect(() => {
@@ -49,6 +50,7 @@ export default function Service() {
           <SectionService key={index} image={data.image} title={data.title} description={data.description} />
         ))}
       </main>
+      <Footer />
     </React.Fragment>
   );
 }
