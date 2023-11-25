@@ -313,6 +313,7 @@ export default function Home() {
           <div className="mt-10 space-y-5 ">{/* <FaQPart /> */}</div>
         </div>
       </main>
+      
     </React.Fragment>
   );
 }
