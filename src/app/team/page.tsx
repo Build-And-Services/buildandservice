@@ -16,7 +16,7 @@ export default function Team() {
   return (
     <React.Fragment>
       <Navbar />
-      <main className='pb-32'>
+      <main className='pb-32  mt-20'>
         <div className='w-full lg:max-w-6xl py-10 mx-auto flex flex-col items-center'>
           <section className='mx-5 lg:w-full lg:text-start' data-aos='fade-right'>
             <h3 className='font-bold text-green-500 text-3xl'>Our Teams</h3>

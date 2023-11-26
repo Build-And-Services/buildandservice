@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <React.Fragment>
       <Navbar />
-      <main className='pb-28'>
+      <main className='pb-28 mt-20'>
         <section className='mb-20 w-[90%] sm:max-w-6xl mx-auto py-10' data-aos='fade-up'>
           <h3 className='font-medium text-green-500 text-lg'>Recommended For You</h3>
           <h1 className='text-slate-600 font-bold text-3xl mt-2'>Pilih sesuai kebutuhan kalian.</h1>

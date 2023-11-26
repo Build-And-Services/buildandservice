@@ -19,7 +19,7 @@ export default function Service() {
   return (
     <React.Fragment>
       <Navbar />
-      <section className='banner-section w-full sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl py-28 lg:mx-auto '>
+      <section className='banner-section w-full sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl py-28 lg:mx-auto'>
         <div className='grid items-center gap-12 lg:grid-cols-2 mx-8 md:mx-auto'>
           <div className='service-content' data-aos='fade-right'>
             <h4 className='text-sm lg:text-xl text-slate-400'>

@@ -19,7 +19,7 @@ export default function Formulir() {
   return (
     <React.Fragment>
       <Navbar />
-      <main className='w-full' data-aos='zoom-in'>
+      <main className='w-full mt-20' data-aos='zoom-in'>
         <div className='w-[90%] sm:max-w-6xl mx-auto py-10'>
           <section className='header-content-formulir'>
             <h1 className='text-center text-3xl font-bold'>Form Request Project</h1>
