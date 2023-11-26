@@ -12,6 +12,8 @@ import Footer from '@/components/footer';
 import WebDesign from '@/assets/img/web.png';
 import Mobile from '@/assets/img/mobile.png';
 import Source from '@/assets/img/source.png';
+import Abstrak from '@/assets/bg/abstrak.svg';
+import ContactUs from '@/components/sections/contact-us';
 
 export default function Home() {
   useEffect(() => {
@@ -34,7 +36,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='bg-[#C8FFE0] w-full rounded-sm mb-20 mx-auto py-10' data-aos='fade-up'>
+        <section className='bg-[#C8FFE0] w-full rounded-sm mb-20 mx-auto py-10' data-aos='fade-up' style={{ backgroundImage: `url(${Abstrak.src})` }}>
           <div className='w-[90%] sm:max-w-6xl mx-auto py-10'>
             <div className='text-center'>
               <h3 className='font-medium text-green-500 text-lg'>we shall never deny guest even the most ridiculous request.</h3>
@@ -151,7 +153,7 @@ export default function Home() {
           </Marquee>
         </section>
 
-        <section className='w-[90%] sm:max-w-6xl mx-auto'>
+        <section className='w-[90%] sm:max-w-6xl mx-auto mb-[100px]'>
           <div data-aos='zoom-in'>
             <h3 className='font-medium text-green-500 text-lg'>Info lebih lanjut</h3>
             <h1 className='text-slate-600 font-bold text-3xl mt-2'>Frequently Asked Questions</h1>
@@ -162,6 +164,7 @@ export default function Home() {
             <FaqAccordion />
           </div>
         </section>
+        <ContactUs />
       </main>
       <Footer />
     </React.Fragment>
