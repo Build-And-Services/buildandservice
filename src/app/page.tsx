@@ -12,6 +12,7 @@ import Footer from '@/components/footer';
 import WebDesign from '@/assets/img/web.png';
 import Mobile from '@/assets/img/mobile.png';
 import Source from '@/assets/img/source.png';
+import faqAccordion from '@/data/static/faq-accordion';
 
 export default function Home() {
   useEffect(() => {
@@ -157,9 +158,11 @@ export default function Home() {
             <h1 className='text-slate-600 font-bold text-3xl mt-2'>Frequently Asked Questions</h1>
           </div>
           <div className='mt-10 space-y-5'>
-            <FaqAccordion />
-            <FaqAccordion />
-            <FaqAccordion />
+            {
+              faqAccordion.map((data, index) => (
+                <FaqAccordion key={index} title={data.title} description={data.description} />
+              ))
+            }
           </div>
         </section>
       </main>
