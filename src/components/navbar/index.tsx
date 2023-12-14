@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/legacy/image';
 import Logo from '@/assets/logo.png';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
   return (
     <React.Fragment>
       <div className='fixed top-0 left-0 right-0 z-40 '>
@@ -13,9 +15,15 @@ export default function Navbar() {
             <Image src={Logo} objectFit={'cover'} height={48} width={68} alt='alt' />
             <div className='flex items-center'>
               <div className='ml-20 space-x-20 hidden lg:block '>
-                <Link href={'/'}>Home</Link>
-                <Link href={'/service'}>Service</Link>
-                <Link href={'/team'}>Our Teams</Link>
+                <Link href={'/'} className={`hover:text-green-800 ${pathname == '/' ? 'text-green-600' : ''}`}>
+                  Home
+                </Link>
+                <Link href={'/service'} className={`hover:text-green-800 ${pathname == '/service' ? 'text-green-600' : ''}`}>
+                  Service
+                </Link>
+                <Link href={'/team'} className={`hover:text-green-800 ${pathname == '/team' ? 'text-green-600' : ''}`}>
+                  Our Teams
+                </Link>
               </div>
             </div>
             <div className='hidden sm:block'>
