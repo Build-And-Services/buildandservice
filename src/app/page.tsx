@@ -12,14 +12,11 @@ import Footer from '@/components/footer';
 import WebDesign from '@/assets/img/web.png';
 import Mobile from '@/assets/img/mobile.png';
 import Source from '@/assets/img/source.png';
-<<<<<<< HEAD
 import Abstrak from '@/assets/bg/abstrak.svg';
 import ContactUs from '@/components/sections/contact-us';
-=======
 import faqAccordion from '@/data/static/faq-accordion';
 import cardMarquee from '@/data/static/card-marquee';
 import CardMarquee from '@/components/cards/card-marquee';
->>>>>>> e984ba564d112f9754f806de9bc01338eae88d93
 
 export default function Home() {
   useEffect(() => {
@@ -63,19 +60,15 @@ export default function Home() {
           </div>
 
           <Marquee pauseOnHover direction='right' className='mt-[30px] py-[30px]'>
-            {
-              cardMarquee.item1.map((data, index) => (
-                <CardMarquee key={index} image={data.image} name={data.name} description={data.description} />
-              ))
-            }
+            {cardMarquee.item1.map((data, index) => (
+              <CardMarquee key={index} image={data.image} name={data.name} description={data.description} />
+            ))}
           </Marquee>
 
           <Marquee pauseOnHover className='mb-[150px] py-[40px]'>
-            {
-              cardMarquee.item2.map((data, index) => (
-                <CardMarquee key={index} image={data.image} name={data.name} description={data.description} />
-              ))
-            }
+            {cardMarquee.item2.map((data, index) => (
+              <CardMarquee key={index} image={data.image} name={data.name} description={data.description} />
+            ))}
           </Marquee>
         </section>
 
@@ -85,11 +78,9 @@ export default function Home() {
             <h1 className='text-slate-600 font-bold text-3xl mt-2'>Frequently Asked Questions</h1>
           </div>
           <div className='mt-10 space-y-5'>
-            {
-              faqAccordion.map((data, index) => (
-                <FaqAccordion key={index} title={data.title} description={data.description} />
-              ))
-            }
+            {faqAccordion.map((data, index) => (
+              <FaqAccordion key={index} title={data.title} description={data.description} />
+            ))}
           </div>
         </section>
         <ContactUs />
